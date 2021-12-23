@@ -31,16 +31,30 @@
 详细说明该项目系统架构，当中主要模块的设计介绍，参考以下内容：
 
 * 项目系统结构
-* 流程图
-* 主模块设计
-* 内外部依赖
+![image](https://user-images.githubusercontent.com/1468472/147273314-b7a10a2d-547a-4d5e-b3d6-c5e7fe12c288.png)
+
 
 注：以上内容按需描述相应项，不涉及则无需体现。
 
 ## 项目测试
 
-验证项目功能的测试用例。
+http://localhost:8787/api/test
 
-## <.....>
+http://localhost:8787/api/author?name=李白
+[{"id":"author002","name":"李白","dynasty":"唐","courtesyName":"太白","pseudonym":"青莲居士"}]
 
-更多你想补充说明的内容。
+http://81.70.29.163:8787/api/poetry?query=李白
+[{"address":"绵阳市，匡山","author":"李白","ancient_address":"四川昌隆县北五十里，戴天山","name":"《访戴天山道士不遇》","Latitude":31.864654541015625,"id":"poetry009","content":"犬吠水声中，桃花带露浓。\n树深时见鹿，溪午不闻钟。\n野竹分青霭，飞泉挂碧峰。\n无人知所去，愁倚两三松。","longitude":104.68647766113281},{"address":"九江市，三叠泉大瀑布","author":"李白","ancient_address":"九江，庐山","name":"《望庐山瀑布》","Latitude":29.549285888671875,"id":"poetry010","content":"日照香炉生紫烟，遥看瀑布挂前川。\n飞流直下三千尺，疑是银河落九天。","longitude":116.06073760986328}]
+
+http://localhost:8787/api/poetry/author?author=李白
+
+[{"address":"绵阳市，匡山","author":"李白","ancient_address":"四川昌隆县北五十里，戴天山","name":"《访戴天山道士不遇》","Latitude":31.864654541015625,"id":"poetry009","content":"犬吠水声中，桃花带露浓。\n树深时见鹿，溪午不闻钟。\n野竹分青霭，飞泉挂碧峰。\n无人知所去，愁倚两三松。","longitude":104.68647766113281},{"address":"九江市，三叠泉大瀑布","author":"李白","ancient_address":"九江，庐山","name":"《望庐山瀑布》","Latitude":29.549285888671875,"id":"poetry010","content":"日照香炉生紫烟，遥看瀑布挂前川。\n飞流直下三千尺，疑是银河落九天。","longitude":116.06073760986328}]
+
+
+http://localhost:8787/api/poetry/city?city=杭州
+[{"address":"杭州，锦绣风水洞","author":"苏轼","ancient_address":"杭州，钱塘县","name":"《临江仙 风水洞作》","Latitude":30.125019073486328,"id":"poetry001","content":"四大从来都遍满，此间风水何疑。故应为我发新诗。幽花香涧谷，寒藻舞沦漪。\n借与玉川生两腋，天仙未必相思。还凭流水送人归。层巅余落日，草露已沾衣。","longitude":120.05693817138672},{"address":"杭州，西湖","author":"苏轼","ancient_address":"钱塘县，西湖","name":"《饮湖上初晴后雨二首·其二》","Latitude":30.228931427001953,"id":"poetry002","content":"水光潋滟晴方好，山色空蒙雨亦奇。\n欲把西湖比西子，淡妆浓抹总相宜。","longitude":120.12792205810547}]
+
+
+http://localhost:8787/api/poetry/username?username=叶小萌
+[{"address":"绍兴市，陆游故里","author":"陆游","ancient_address":"绍兴市","name":"《後园闲步》","Latitude":30.02001190185547,"id":"poetry011","content":"木叶勾萌喜小春，鬓毛萧飒媿陈人。\n今朝忽破簿书梦，此地暂还风月身。\n闲岸纶巾照清浅，却扶藤杖上嶙峋。\n人生要是便疏豁，金马银台莫问津。","longitude":120.53633880615234}]
+
