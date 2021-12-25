@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/search/search",
+        "pages/suggestion/suggestion",
+        "pages/geocoding/geocoding",
+        "pages/regeocoding/regeocoding",
+        "pages/weather/weather"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "请点击确认"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#121212",
+        "navigationBarTitleText": "诗词游",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#ddd"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#4db900",
+        "backgroundColor": "#fbfbfd",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/search/search",
+                "text": "诗词巡礼"
+            },
+            {
+                "pagePath": "pages/suggestion/suggestion",
+                "text": "本命诗"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

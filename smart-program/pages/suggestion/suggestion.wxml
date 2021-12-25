@@ -1,0 +1,20 @@
+<view class="map_container">
+  <view class="search">
+     <view class="search-input">
+      <input class="weui-input" placeholder="请输入您的名字" bindblur="searchPlace"/>
+     </view>
+  </view>
+</view>
+<view class="place_info" hidden="{{flag}}" >
+        <view id="list" class="list">
+            <view class="list-box">
+              <rich-text nodes="{{placeData.name}}"></rich-text>
+              <rich-text nodes="{{placeData.author}}"></rich-text>
+              <view class="contentlist">
+                <!-- {{placeData.content}} -->
+                <rich-text nodes="{{placeData.content}}"></rich-text>
+              </view>
+              <rich-text nodes="{{placeData.address}}"></rich-text>
+            </view>
+        </view>  
+</view>

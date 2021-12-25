@@ -1,0 +1,52 @@
+.map_container{
+    height: 750px;
+    width: 100%;
+    position: relative;
+    background-color: #999;
+}
+.search{
+     position: absolute;
+     top:15px;
+     left: 10px;
+     right: 10px;
+}
+.search-input{
+     background-color: #fff;
+     border-radius: 10px;
+}
+.weui-input{
+    line-height: 40px;
+    height: 40px;
+    padding-left: 10px;
+}
+.place_info {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.list{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.list-box{
+    padding: 10px;
+    height: 300px;
+}
+.contentlist{
+     height: 200px;
+     overflow:auto;
+}
+.sure{
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #eee;
+    line-height: 40px;
+}

@@ -1,0 +1,15 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scaleNum}}" show-location="true" markers="{{markers}}"  bindmarkertap="makertap"></map>
+  <view class="search">
+     <view class="search-input"> 
+      <input class="weui-input" placeholder="请输入诗词或作者" bindblur="searchPlace"/>
+     </view>
+  </view>
+  <view class="content">
+        <text>{{placeData.name}}</text>
+        <view class="contentlist">
+           <view>{{placeData.content}}</view>
+        </view>
+        <text>{{placeData.address}}</text>
+  </view>
+</view>
